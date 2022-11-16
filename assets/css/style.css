@@ -1,0 +1,154 @@
+/* FONTE */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600&display=swap');
+
+/* VARIÁVEIS GLOBAIS CSS*/
+:root {
+  --header-height: 3.5rem;
+
+   /*CORES*/
+  --primary-color: #FF6462;
+  --title-color: #4c4e4e;
+  --text-color: #45484a;
+  --text-color-light: #8a8f93;
+  --body-color: #fcfcfd;
+  --container-color: #f2f2f3;
+
+  /*TIPOGRAFIA*/
+
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 1.75rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  --tiny-font-size: .625rem;
+  --font-medium: 500;
+  --font-semibold: 600;
+
+}
+
+/*TIPOGRAFIA RESPONSIVA*/
+@media screen and (min-width: 968px) {
+  :root {
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/* ESTILIZAÇÃO BASE */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semibold);
+}
+
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
+
+body,button,input,textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*PROPRIEDADES*/
+.container {
+    max-width: 120rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+  
+.grid {
+    display: grid;
+    gap: 1.25rem;
+}
+  
+main {
+    overflow: hidden;
+}
+  
+.section {
+    padding: 4.5rem 0 1rem; 
+}
+
+/*HEADER*/
+
+
+/*BUTTONS*/
+
+.button{
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--body-color);
+  padding: 0.60rem;
+  border-radius: 0.60rem;
+  transition: 4.s;
+}
+
+/*HOME*/
+
+
+.home_container{
+  position: relative;
+  row-gap: 4.5rem;
+  padding-top: 7rem;
+}
+
+.home_conteudo{
+  text-align: center;
+}
+
+.home_nome{
+  font-size: var(--biggest-font-size);
+}
+
+.home_titulacao{
+  font-size: var(--small-font-size);
+}
+
+.home_button{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.home_img{
+  width: 200px;
+}
+
+
